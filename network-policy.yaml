@@ -22,7 +22,6 @@ spec:
         kinds:
         - Namespace
         - Services
-        - deployments
     generate:
       kind: NetworkPolicy
       name: allow-80-port

@@ -31,7 +31,7 @@ spec:
           # select all pods in the namespace
           podSelector:
             matchLabels:
-              app: frontend
+              app: guestbook
           # deny all traffic
           ingress:
           - ports:

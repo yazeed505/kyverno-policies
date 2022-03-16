@@ -21,7 +21,6 @@ spec:
       resources:
         kinds:
         - Namespace
-        - Services
     generate:
       kind: NetworkPolicy
       name: allow-80-port

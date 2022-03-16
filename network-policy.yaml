@@ -21,6 +21,8 @@ spec:
       resources:
         kinds:
         - Namespace
+        - Services
+        - deployments
     generate:
       kind: NetworkPolicy
       name: allow-80-port
@@ -31,7 +33,7 @@ spec:
           # select all pods in the namespace
           podSelector:
             matchLabels:
-              role: frontend
+              app: frontend
           # deny all traffic
           ingress:
           - ports:
